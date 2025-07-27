@@ -7,7 +7,7 @@ import  Link  from 'next/link'
 export default function Hero() {
   return (
     <div className="min-h-screen w-full bg-black flex items-center justify-center overflow-hidden relative">
-        <div className="pt-25 px-5">
+        <div className="pt-15 px-5">
             <div className="space-y-5">
                 <h1
                 className="md:text-4xl text-4xl lg:text-5xl font-bold text-center text-white relative z-20">
