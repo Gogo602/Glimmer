@@ -44,11 +44,11 @@ export default function Hero() {
                     </p>
                     <div className='flex items-center justify-center py-5 gap-6'>
                         <Link href="/login"
-                            className='py-3 px-8  bg-black/50 border border-green-600 rounded-md md:px-10'>
+                            className='py-3 px-5  bg-black/50 border border-green-600 rounded-md md:px-10'>
                             Get Started 
                           </Link>
                           <Link href="/#"
-                            className='py-3 px-8  bg-black/50 border border-green-600 rounded-md md:px-10'>
+                            className='py-3 px-5  bg-black/50 border border-green-600 rounded-md md:px-10'>
                             Contribute
                         </Link>
                     </div>
