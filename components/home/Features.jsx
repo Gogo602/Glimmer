@@ -31,11 +31,11 @@ function Features() {
     ]
 
     return (
-        <section className="flex items-center justify-center px-5 py-20">
+        <section className="flex items-center justify-center px-5 py-15">
             <div className="space-y-8">
                 <div className="text-center space-y-5">
                     <div className="flex items-center justify-center">
-                        <h5 className="font-bold border-b-4 w-18 border-green-500">Features</h5>
+                        <h5 className="font-bold border-b-4 w-18 border-[#5E17EB]">Features</h5>
                     </div>
                     <h2 className="text-2xl font-bold">Unlock Your Profile's Potential with Powerful Features</h2>
                 </div>
@@ -43,17 +43,17 @@ function Features() {
                     {featureData.map((features) => (
                         <div 
                             key={features.id}
-                            className="bg-transparent border border-green-500 px-5 pb-5 rounded-md"
+                            className="bg-transparent border border-[#5E17EB] pb-5 rounded-md"
                         >
                             <Image
                                 src={features.Icon}
                                 width={200}
                                 height={100}
                                 alt={features.title}
-                                className="w-full object-cover rounded-lg"
+                                className="w-full object-cover rounded-t-lg"
                             />
-                            <h2>{features.title}</h2>
-                            <p className="text-sm">{features.Description}</p>
+                            <h2 className="p-3">{features.title}</h2>
+                            <p className="text-sm p-3">{features.Description}</p>
                         </div>
                     ))}
                 </div>

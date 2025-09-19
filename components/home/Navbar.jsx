@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import MenuItems from "./MenuItems";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
-import  Link  from 'next/link'
+import Link from 'next/link'
+import Image from "next/image";
 
 
 const navItems = [
@@ -23,19 +24,19 @@ export default function Navbar() {
         <motion.nav
             initial = {{y:-100}}
             animate = {{y:0}}
-            className='fixed w-full z-50 bg-black/30  backdrop-filter backdrop-blur-lg transition-all duration-300 ease-out px-10'>
+            className='fixed w-full z-50 bg-[#270A63E5]/90 backdrop-filter backdrop-blur-lg transition-all duration-300 ease-out px-5 sm:px-10'>
             <div className="flex items-center justify-between">
 
-                <div className="max-width-7xl px-6 py-3">
+                <div className="max-width-7xl  py-3 sm:px-5">
                     <motion.div
                         whileHover={{scale: 1.05}}
-                        className='flex items-center text-2xl font-bold transition-all duration-200 ease-in-out hover:cursor-pointer'>
-                        <span className="text-gray-100">Glimmer</span>
+                        className='flex items-center  font-bold transition-all duration-200 ease-in-out hover:cursor-pointer'>
+                        <Image src='/glimmer.png' alt="glimmer_logo" width={150} height={60}/>
                     </motion.div>
                 </div>
             
-                <div className="hidden md:flex items-center gap-10">
-                    <div className="flex justify-between font-bold items-center text-gray-50 gap-6  px-4 py-2 border-t border-white/5 shadow-md shadow-green-800">
+                <div className="hidden lg:flex items-center gap-10">
+                    <div className="flex justify-between font-bold items-center text-gray-50 gap-6  px-4 py-2">
                         {
                         navItems.map((items, i) => (
                               <MenuItems key={items.name} index={i} href={items.href}>{items.name}</ MenuItems>
@@ -44,17 +45,17 @@ export default function Navbar() {
                     </div>
                     
                     <div className='flex gap-2'>
-                        <Link href='/login' className="bg-green-800 py-2 px-6 rounded-md">
-                            Login
-                        </Link>
-                        <Link href='/register' className="border border-green-800 py-2 px-6 rounded-md shadow-md shadow-green-800">
+                        <Link href='/register' className=" bg-[#5E17EB] py-2 px-6 rounded-md">
                            Get Started
+                        </Link>
+                        <Link href='/login' className="border border-[#5E17EB] py-2 px-6 rounded-md">
+                            Login
                         </Link>
                     </div>
                 </div>
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="md:hidden inline p-2 rounded-lg bg-white/5 hover:bg-green-800 transition-colors">
+                    className="lg:hidden inline p-2 rounded-lg bg-[#5E17EB]/5 hover:bg-[#5E17EB] transition-colors">
                        {isMenuOpen ? (
                             <XMarkIcon className="h-6 w-6 text-white"/>
                         ): (
@@ -66,7 +67,7 @@ export default function Navbar() {
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate = {{opacity:1, y:0}}
-                    className="md:hidden mt-4 pb-4 space-y-4"
+                    className="lg:hidden mt-4 pb-4 space-y-4"
                 >
                     {
                         navItems.map((item) =>(
@@ -74,19 +75,19 @@ export default function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 onClick={() => setIsMenuOpen(false)}
-                                className="block px-4 py-2 text-white hover:text-green-800 hover:bg-gray-50/50 rounded-lg transition-colors font-bold"
+                                className="block px-4 py-2 text-white hover:text-[#270A63E5] hover:bg-gray-50/50 rounded-lg transition-colors font-bold"
                             >
                                 {item.name}
                         </a>
                         ))
                     }
 
-                    <div className="pt-4 border-t border-green-800">
+                    <div className="pt-4 border-t border-[#270A63E5]">
                         <div className='flex gap-6'>
-                        <Link href='/login' className="bg-green-800 py-2 px-6 rounded-md hover:text-green-300">
+                        <Link href='/login' className="border border-[#5E17EB] py-2 px-6 rounded-md">
                             Login
                         </Link>
-                        <Link href='/register' className="border border-green-800 py-2 px-6 rounded-md shadow-md shadow-green-800 hover:text-green-800">
+                        <Link href='/register' className=" bg-[#5E17EB] py-2 px-6 rounded-md ">
                             Get Started
                         </Link>
                         </div>
