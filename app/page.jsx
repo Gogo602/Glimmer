@@ -23,7 +23,7 @@ export default function Home() {
       />
 
       <Navbar />
-      <main className="relative">
+      <main className="relative text-white">
         <Hero />
         <Body />
       </main>  
