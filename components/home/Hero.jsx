@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="min-h-screen w-full flex items-center justify-center relative">
         <div className="px-5">
             <div className="flex items-center justify-center my-5">
-                  <h6 className="border border-[#270A63E5] bg-[#270A63E5]/30 px-6 py-1 rounded-full text-[11px]">
+                  <h6 className="border border-[#270A63E5] bg-black/30 px-6 py-1 rounded-full text-[11px]">
                       AI POWER BANNER & BIO GENERATOR
                   </h6>
             </div>
@@ -25,11 +25,11 @@ export default function Hero() {
                 </p>
                 <div className='flex items-center justify-center py-5 gap-6'>
                     <Link href="/login"
-                        className='py-2 px-5  bg-[#270A63E5] border border-white rounded-full md:px-10'>
+                        className='py-2 px-5  bg-gradient-to-r from-[#270A63E5]/50 to-[#050505]/20 border border-white rounded-full md:px-10'>
                         Get Started 
-                        </Link>
-                        <Link href="/#"
-                        className='py-2 px-5  bg-[#270A63E5] border border-white rounded-full md:px-10'>
+                    </Link>
+                    <Link href="/#"
+                        className='py-2 px-5  bg-gradient-to-r from-[#050505]/20 to-[#270A63E5]/50  border border-white rounded-full md:px-10'>
                         Contribute
                     </Link>
                 </div>

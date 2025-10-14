@@ -45,7 +45,7 @@ export default function Navbar() {
                     </div>
                     
                     <div className='flex gap-2'>
-                        <Link href='/register' className="border border-white bg-[#270A63E5] py-2 px-7 rounded-full">
+                        <Link href='/register' className="border border-white bg-gradient-to-r from-[#050505]/60 to-[#270A63E5]/20 py-2 px-7 rounded-full">
                            Get Started
                         </Link>
                         <Link href='/login' className="border border-white py-2 px-7 rounded-full">
@@ -87,7 +87,7 @@ export default function Navbar() {
                         <Link href='/login' className="border border-white py-2 px-7 rounded-full">
                             Login
                         </Link>
-                        <Link href='/register' className="border border-white bg-[#270A63E5] py-2 px-7 rounded-full ">
+                        <Link href='/register' className="border border-white bg-gradient-to-r from-[#050505]/60 to-[#270A63E5]/20  py-2 px-7 rounded-full ">
                             Get Started
                         </Link>
                         </div>
