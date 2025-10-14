@@ -17,7 +17,7 @@ const MenuItems = ({ children, index, href }) => {
             }}
             className='relative overflow-hidden px-2'   
         >
-            <span className='text-gray-50 hover:text-green-800 transaition-colors hover:cursor-pointer'>{children}</span>
+            <span className='text-gray-50 hover:border-b border-white transaition-colors hover:cursor-pointer'>{children}</span>
       </motion.a>
   )
 }

@@ -24,7 +24,7 @@ export default function Navbar() {
         <motion.nav
             initial = {{y:-100}}
             animate = {{y:0}}
-            className='fixed w-full z-50 bg-[#270A63E5]/90 backdrop-filter backdrop-blur-lg transition-all duration-300 ease-out px-5 sm:px-10'>
+            className='fixed w-full z-50 bg-[#270A63E5]/40 backdrop-filter backdrop-blur-lg transition-all duration-300 ease-out px-5 sm:px-10'>
             <div className="flex items-center justify-between">
 
                 <div className="max-width-7xl  py-3 sm:px-5">
@@ -45,17 +45,17 @@ export default function Navbar() {
                     </div>
                     
                     <div className='flex gap-2'>
-                        <Link href='/register' className=" bg-[#5E17EB] py-2 px-6 rounded-md">
+                        <Link href='/register' className="border border-white bg-[#270A63E5] py-2 px-7 rounded-full">
                            Get Started
                         </Link>
-                        <Link href='/login' className="border border-[#5E17EB] py-2 px-6 rounded-md">
+                        <Link href='/login' className="border border-white py-2 px-7 rounded-full">
                             Login
                         </Link>
                     </div>
                 </div>
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="lg:hidden inline p-2 rounded-lg bg-[#5E17EB]/5 hover:bg-[#5E17EB] transition-colors">
+                    className="lg:hidden inline p-2 rounded-lg bg-[#5E17EB]/5 hover:bg-[#270A63E5] transition-colors">
                        {isMenuOpen ? (
                             <XMarkIcon className="h-6 w-6 text-white"/>
                         ): (
@@ -75,7 +75,7 @@ export default function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 onClick={() => setIsMenuOpen(false)}
-                                className="block px-4 py-2 text-white hover:text-[#270A63E5] hover:bg-gray-50/50 rounded-lg transition-colors font-bold"
+                                className="block px-4 py-2 text-white hover:text-[#270A63E5] hover:bg-gray-50 rounded-lg transition-colors font-bold"
                             >
                                 {item.name}
                         </a>
@@ -84,10 +84,10 @@ export default function Navbar() {
 
                     <div className="pt-4 border-t border-[#270A63E5]">
                         <div className='flex gap-6'>
-                        <Link href='/login' className="border border-[#5E17EB] py-2 px-6 rounded-md">
+                        <Link href='/login' className="border border-white py-2 px-7 rounded-full">
                             Login
                         </Link>
-                        <Link href='/register' className=" bg-[#5E17EB] py-2 px-6 rounded-md ">
+                        <Link href='/register' className="border border-white bg-[#270A63E5] py-2 px-7 rounded-full ">
                             Get Started
                         </Link>
                         </div>
