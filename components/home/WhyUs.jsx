@@ -17,7 +17,7 @@ export default function WhyUs() {
                     In today's digital age, your online profile is your first impression. Standout with a unique and compelling digital Identity
                 </p>
                   
-               <div className="grid grid-cols-1 md:grid-cols-3 my-7 gap-5 px-20">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-7 gap-5 md:px-20">
                     {whyUs.map((why) => (
                         <div key={why.id} className="bg-[#270A63E5]/10 border border-[#270A63E5] rounded-md p-5">
                             <p className="">{why.icon}</p>
