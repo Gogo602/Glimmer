@@ -24,7 +24,7 @@ export default function Navbar() {
         <motion.nav
             initial = {{y:-100}}
             animate = {{y:0}}
-            className='fixed w-full z-50 bg-[#270A63E5]/40 backdrop-filter backdrop-blur-lg transition-all duration-300 ease-out px-5 sm:px-10'>
+            className='fixed w-full z-50 bg-[#270A63E5]/40 backdrop-filter backdrop-blur-lg transition-all duration-300 ease-out px-5 sm:px-10 text-white'>
             <div className="flex items-center justify-between">
 
                 <div className="max-width-7xl  py-3 sm:px-5">

@@ -9,9 +9,10 @@ export default function Hero() {
     <section className="min-h-screen w-full flex items-center justify-center relative">
         <div className="px-5">
             <div className="flex items-center justify-center my-5">
-                  <h6 className="border border-[#270A63E5] bg-black/30 px-6 py-1 rounded-full text-[11px]">
-                      AI POWER BANNER & BIO GENERATOR
-                  </h6>
+                
+                <h6 className="border border-[#270A63E5] bg-black/30 px-6 py-1 rounded-full text-[11px] text-yellow-600">
+                    AI POWER BANNER & BIO GENERATOR
+                </h6>
             </div>
             <div className="space-y-5"> 
                 <h1
@@ -20,7 +21,7 @@ export default function Hero() {
                 </h1>
             </div>               
             <div className="pt-5">
-                <p className="text-center">
+                <p className="text-center sm:px-10">
                     With AI-driven design, GlimmerID helps you create stunning LinkedIn banners and compelling bios in seconds, no design skills required.
                 </p>
                 <div className='flex items-center justify-center py-5 gap-6'>

@@ -3,6 +3,7 @@ import React from "react";
 import WhyUs from "./WhyUs";
 import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
+import Faq from "./Faq";
 
 
 export default function Body() {
@@ -12,6 +13,7 @@ export default function Body() {
             <WhyUs /> 
             <HowItWorks /> 
             <Testimonials />
+            <Faq />
         </div>
     </div>
   );

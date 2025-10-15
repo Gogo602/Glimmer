@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import { FaHandSparkles, FaPlus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 
 export const InfiniteMovingCards = ({
   items,
@@ -70,9 +70,9 @@ export const InfiniteMovingCards = ({
         )}>
         {items.map((item, idx) => (
           <li
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border-2 border-b-0 border-l-0 border-[#270A63E5] px-8 py-6 md:w-[450px]  bg-black/50 "
+            className="relative w-[350px] max-w-full shrink-0  border-4 border-b-0 border-l-0 border-[#270A63E5] px-8 py-6 md:w-[450px]  bg-black/50 "
             key={item.name}>
-             <FaHandSparkles className="absolute h-6 w-6 -bottom-2 -left-3 text-yellow-600" />
+             <FaPlus className="absolute h-6 w-6 -bottom-2 -left-3 text-yellow-600" />
             <blockquote>
               <div
                 aria-hidden="true"
