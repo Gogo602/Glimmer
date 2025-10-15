@@ -33,7 +33,7 @@ export default function Faq() {
                             onClick={() => toggleAccordion(index)}
                         >
                             <div className="flex items-center justify-between gap-5 sm:gap-30 md:gap-70">
-                                <h4 className="text-lg font-semibold text-white">{faq.question}</h4>
+                                <h4 className="text-md font-semibold text-white">{faq.question}</h4>
                                 <p>
                                     {expandedIndex === index ? <FaMinus className='w-5 text-yellow-600'/> : <FaPlus className='w-5 text-yellow-600'/>}
                                 </p>
