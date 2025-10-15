@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 export default function Testimonials() {
   return (
     <div
-      className="h-[40rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+      className="h-[40rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden pb-25">
         <div className="flex items-center justify-center pb-5">
             <h5 className="font-bold border-b-4  border-[#270A63E5]">What Our Users Says</h5>
         </div>

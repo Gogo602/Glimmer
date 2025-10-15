@@ -4,6 +4,7 @@ import WhyUs from "./WhyUs";
 import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 import Faq from "./Faq";
+import Cta from "./Cta";
 
 
 export default function Body() {
@@ -14,6 +15,7 @@ export default function Body() {
             <HowItWorks /> 
             <Testimonials />
             <Faq />
+            <Cta />
         </div>
     </div>
   );
