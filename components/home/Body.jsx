@@ -5,7 +5,6 @@ import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 import Faq from "./Faq";
 import Cta from "./Cta";
-import Footer from "./Footer";
 
 
 export default function Body() {
@@ -17,7 +16,6 @@ export default function Body() {
             <Testimonials />
             <Faq />
             <Cta />
-            <Footer />
         </div>
     </div>
   );

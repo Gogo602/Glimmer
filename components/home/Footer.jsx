@@ -5,7 +5,7 @@ function Footer() {
 
     return (
         <section
-            className='px-10 bg-black/70'
+            className='px-10 bg-black'
         >
             <div className=" inset-0 bg-white opacity-90"></div>
 
