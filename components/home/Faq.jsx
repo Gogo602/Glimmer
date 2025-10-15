@@ -15,7 +15,7 @@ export default function Faq() {
 
 
   return (
-    <section className=" w-full px-5 flex items-center justify-center pb-25 sm:px-25 md:px-30 lg:px-75">
+    <section className=" w-full px-3 flex items-center justify-center pb-25 sm:px-25 md:px-30 lg:px-75">
         <div>
             <div className="space-y-5"> 
                 <div className="flex items-center justify-center">
@@ -32,7 +32,7 @@ export default function Faq() {
                             className="border-4 rounded-xl p-5 border-[#270A63E5] w-full"
                             onClick={() => toggleAccordion(index)}
                         >
-                            <div className="flex items-center justify-between gap-5 sm:gap-30 md:gap-70">
+                            <div className="flex items-center justify-between gap-15 sm:gap-30 md:gap-70">
                                 <h4 className="text-md font-semibold text-white">{faq.question}</h4>
                                 <p>
                                     {expandedIndex === index ? <FaMinus className='w-5 text-yellow-600'/> : <FaPlus className='w-5 text-yellow-600'/>}
