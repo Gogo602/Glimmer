@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaPlus } from 'react-icons/fa'
+import { FaPlus, FaUser } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa6'
 import { FaLock } from "react-icons/fa";
 
@@ -25,11 +25,19 @@ export default function LoginPage() {
             <div className="space-y-5">
                   <div className="space-y-2 text-center">
                     <div className="flex items-center justify-center">
-                        <h5 className="font-bold border-b-4  border-[#270A63E5] text-2xl">Login</h5>
+                        <h5 className="font-bold border-b-4  border-[#270A63E5] text-2xl">Signup</h5>
                     </div>
                     <p>GliimerId is built for you</p>
                   </div>
                 <form action="" className="flex flex-col w-full space-y-5">
+                    <div className="relative">
+                        <label htmlFor="text" className="">Full Name</label>
+                        <input
+                              type="text"
+                              className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        />
+                        <FaUser size={26} className='text-yellow-600 absolute top-10 left-2'/>
+                    </div>
                     <div className="relative">
                         <label htmlFor="email" className="">Email</label>
                         <input
@@ -46,15 +54,24 @@ export default function LoginPage() {
                         />
                         <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
                     </div>
-                    <Link href="/forgot-password" className="text-right font-semibold">Forgot Password?</Link>
+                    
+                    <div className='relative'>
+                        <label htmlFor="password" className="pb-2">Confirm Password</label>
+                        <input 
+                          type="password" 
+                          className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        />
+                        <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
+                    </div>
+                    
                     <button
                           type="submit"
                           className="py-2 px-5  bg-gradient-to-r from-[#050505]/20 to-[#270A63E5]/50  border border-white rounded-md md:px-10 cursor-pointer"
-                      >Login</button>
+                      >Signup</button>
                 </form>
                 <div className='font-semibold flex items-center justify-center'>
-                    <p>Dont have an Account? </p> 
-                    <Link href="/register" className="text-right font-semibold ml-2">Signup</Link>
+                    <p>Already have an Account? </p> 
+                    <Link href="/login" className="text-right font-semibold ml-2">Login</Link>
                 </div>
                 <FaPlus className="absolute h-6 w-6 -top-3.5 -right-3.5 text-yellow-600" />
             </div>
