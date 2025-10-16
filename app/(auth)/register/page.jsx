@@ -4,7 +4,7 @@ import { FaEnvelope } from 'react-icons/fa6'
 import { FaLock } from "react-icons/fa";
 
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <section className="min-h-screen w-full bg-black relative flex items-center justify-center px-3">
         {/* Dark Noise Colored Background */}

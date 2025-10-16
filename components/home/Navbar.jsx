@@ -8,10 +8,10 @@ import Image from "next/image";
 
 
 const navItems = [
-    { name: "Home", href: '#home' },
-    { name: "Features", href: '#feature' },
-    { name: "Templates", href: '#template' },
-    {name: "Pricing", href: '#pricing'}
+    { name: "Home", href: '/' },
+    { name: "Features", href: '/feature' },
+    { name: "Templates", href: '/template' },
+    {name: "Pricing", href: '/pricing'}
 ]
 
 
