@@ -21,13 +21,13 @@ export default function LoginPage() {
         backgroundPosition: "0 0, 10px 10px, 15px 5px",
         }}
       />
-        <div className="text-white border-4 rounded-tl-4xl border-[#270A63E5] p-5 w-full -mt-10 md:w-2/5 md:mt-5 relative">
+        <div className="text-white border-4 rounded-tl-4xl border-[#270A63E5] p-5 w-full  md:w-2/5 mt-25 relative">
             <div className="space-y-5">
                   <div className="space-y-2 text-center">
                     <div className="flex items-center justify-center">
                         <h5 className="font-bold border-b-4  border-[#270A63E5] text-2xl">Signup</h5>
                     </div>
-                    <p>GliimerId is built for you</p>
+                    <p>GliimerId is built for you! Create an account for free</p>
                   </div>
                 <form action="" className="flex flex-col w-full space-y-5">
                     <div className="relative">
