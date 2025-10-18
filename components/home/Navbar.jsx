@@ -84,10 +84,16 @@ export default function Navbar() {
 
                     <div className="pt-4 border-t border-[#270A63E5]">
                         <div className='flex gap-6'>
-                        <Link href='/login' className="border border-white py-2 px-7 rounded-full">
+                        <Link 
+                            href='/login' 
+                            onClick={() => setIsMenuOpen(false)}
+                            className="border border-white py-2 px-7 rounded-full">
                             Login
                         </Link>
-                        <Link href='/register' className="border border-white bg-gradient-to-r from-[#050505]/60 to-[#270A63E5]/20  py-2 px-7 rounded-full ">
+                        <Link 
+                            href='/register' 
+                            onClick={() => setIsMenuOpen(false)}
+                            className="border border-white bg-gradient-to-r from-[#050505]/60 to-[#270A63E5]/20  py-2 px-7 rounded-full ">
                             Get Started
                         </Link>
                         </div>
