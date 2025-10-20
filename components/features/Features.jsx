@@ -27,7 +27,7 @@ export default function Feature() {
                                     <FaPlus className="absolute h-6 w-6 -bottom-3.5 -right-3.5 text-yellow-600" />
                             <p className="">{feature.icon}</p>
                             <p className="font-bold py-5 text-lg">{feature.title}</p>
-                            <p>{feature.descriotion}</p>
+                            <p>{feature.description}</p>
                         </div> 
                     ))}
                </div>
@@ -42,34 +42,34 @@ const features = [
         id: 1,
         icon: <IoSparklesSharp size={45} className="border border-[#270A63E5] bg-[#270A63E5]/20 rounded-full p-2"/>,
         title: "AI-Powered Banner Generation",
-        descriotion: "Create stunning, professional banners for your Linkedin and Twitter profiles in seconds. our AI analyzes your profile and suggest designs that match your personal brand."
+        description: "Create stunning, professional banners for your Linkedin and Twitter profiles in seconds. our AI analyzes your profile and suggest designs that match your personal brand."
     },
     {
         id: 2,
         icon: <IoNewspaperOutline size={45} className="border border-[#270A63E5] bg-[#270A63E5]/20 rounded-full p-2"/>,
         title: "AI-Powered Bio/About Generation",
-        descriotion: "Generate a compelling and personalised bio that highlights your skills and experience. our AI helps you craft the perfect message to attract recruiters and connections"
+        description: "Generate a compelling and personalised bio that highlights your skills and experience. our AI helps you craft the perfect message to attract recruiters and connections"
     },
     {
         id: 3,
         icon: <IoEyeOutline size={45} className="border border-[#270A63E5] bg-[#270A63E5]/20 rounded-full p-2"/>,
         title: "Live Mockup Preview",
-        descriotion: "See how your new banner and bio will look on your Linkedin and Twitter profiles before you even hit save. our live mockup preview ensures everything is perfect"
+        description: "See how your new banner and bio will look on your Linkedin and Twitter profiles before you even hit save. our live mockup preview ensures everything is perfect"
     },
     {
         id: 4,
         icon: <FaCircleArrowDown size={45} className="border border-[#270A63E5] bg-[#270A63E5]/20 rounded-full p-2"/>,
         title: "Export & Save Functionality",
-        descriotion: "Download your high resolution-banner and save your projects to make future edit a breeze. your professional brand is always just a few clicks away"
+        description: "Download your high resolution-banner and save your projects to make future edit a breeze. your professional brand is always just a few clicks away"
     },
     {
         id: 5,
         icon: <FaMobile size={45} className="border border-[#270A63E5] bg-[#270A63E5]/20 rounded-full p-2"/>,
         title: "Responsive UI",
-        descriotion: "Enjoy a seamless experience across all your devices. GimmerID is fully responsive, so you can design on the go from your desktop, tablet or smartphone"
+        description: "Enjoy a seamless experience across all your devices. GimmerID is fully responsive, so you can design on the go from your desktop, tablet or smartphone"
     },
     {
-        id: 5,
+        id: 6,
         icon: <FaUserCheck size={45} className="border border-[#270A63E5] bg-[#270A63E5]/20 rounded-full p-2"/>,
         title: "Personalized for You",
         description: "Our AI algorithms are designed to understand your unique professional identity, ensuring that every design and a piece of text is tailored to you"

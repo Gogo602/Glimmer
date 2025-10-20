@@ -26,7 +26,7 @@ export default function FeaturesHero() {
             <div className="pt-5">
                 <p className="text-center sm:px-10">
                       GlimmerID's suite of AI-powered tools helps you create an impactful social media profiles that get
-                      <br className="hidden md:inline" />you noticed. Design stunning banners and write compelling bio's in minutes.
+                      <br className="hidden md:inline" /> you noticed. Design stunning banners and write compelling bio's in minutes.
                 </p>
             </div>
               
