@@ -1,5 +1,5 @@
 import Feature from "@/components/features/Features";
-import FeaturesHero from "@/components/features/Hero";
+import FeaturesHero from "@/components/features/FeaturesHero";
 import Cta from "@/components/home/Cta";
 import React from "react";
 
