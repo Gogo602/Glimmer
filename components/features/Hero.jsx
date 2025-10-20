@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import  Link  from 'next/link'
 import { FaMobile, FaUserCheck } from "react-icons/fa";
 import { IoEyeOutline, IoNewspaperOutline, IoSparklesSharp } from "react-icons/io5";
 import { FaCircleArrowDown } from "react-icons/fa6";
 import { Button } from "../ui/moving-border";
 
 
-export default function Hero() {
+export default function FeaturesHero() {
   return (
     <section className="min-h-screen w-full flex items-center justify-center relative">
         <div className="px-5">

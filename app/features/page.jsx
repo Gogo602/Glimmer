@@ -1,4 +1,6 @@
-import Hero from "@/components/features/Hero";
+import Feature from "@/components/features/Features";
+import FeaturesHero from "@/components/features/Hero";
+import Cta from "@/components/home/Cta";
 import React from "react";
 
 
@@ -22,7 +24,9 @@ export default function Features() {
       />
 
       <main className="relative text-white">
-        <Hero />
+        <FeaturesHero />
+        <Feature />
+        <Cta />
       </main>  
     </div>
     
