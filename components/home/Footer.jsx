@@ -5,11 +5,14 @@ function Footer() {
 
     return (
         <section
-            className='px-10 bg-black'
+            className="
+                relative flex items-center justify-left
+                bg-[url(/footer.jpg)] bg-cover bg-center bg-no-repeat px-10
+            "
         >
-            <div className=" inset-0 bg-white opacity-90"></div>
+            <div className="absolute inset-0 bg-[#050505]/95"></div>
 
-            <div className=" text-gray-500 py-15">
+            <div className=" text-gray-500 py-15 z-1">
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
                     
                     <div className='-mt-3'>
@@ -41,7 +44,7 @@ function Footer() {
                     </div>
                     
                 </div>
-                <hr className="my-5 w-full text-yellow-600" />
+                <hr className="my-5 w-full text-yellow-500" />
                 <div className='md:flex items-center justify-between space-y-5'>
                     <div className='text-white'>&copy; {currentYear} GlimmerID. All rights reserved.</div>
                     <ul className='md:flex items-center justify-between gap-3 space-y-5 md:space-y-0'>
