@@ -11,7 +11,7 @@ export default function WhyUs() {
         <div>
             <div className="space-y-5"> 
                 <div className="flex items-center justify-center">
-                    <h5 className="font-bold border-b-4  border-[#270A63E5]">Why GlimmerID</h5>
+                    <h5 className="text-2xl font-bold border-b-4  border-[#270A63E5]">Why GlimmerID</h5>
                 </div>
                 <p className="text-center mb-15">
                     In today's digital age, your online profile is your first impression. Standout with a unique and compelling digital Identity
@@ -24,7 +24,7 @@ export default function WhyUs() {
                                     <FaPlus className="absolute h-6 w-6 -bottom-3.5 -left-3.5 text-yellow-600" />
                                     <FaPlus className="absolute h-6 w-6 -top-3.5 -right-3.5 text-yellow-600" />
                                     <FaPlus className="absolute h-6 w-6 -bottom-3.5 -right-3.5 text-yellow-600" />
-                            <p className="">{why.icon}</p>
+                            <p className="text-yellow-600">{why.icon}</p>
                             <p className="font-bold py-5 text-lg">{why.title}</p>
                             <p>{why.why}</p>
                         </div> 

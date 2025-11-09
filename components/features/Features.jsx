@@ -12,7 +12,7 @@ export default function Feature() {
         <div>
             <div className="space-y-5"> 
                 <div className="flex items-center justify-center">
-                    <h5 className="font-bold border-b-4  border-[#270A63E5]">Features</h5>
+                    <h5 className="font-bold border-b-4 text-2xl border-[#270A63E5]">Features</h5>
                 </div>
                 <p className="text-center mb-15">
                     In today's digital age, your online profile is your first impression. Standout with a unique and compelling digital Identity

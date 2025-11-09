@@ -19,7 +19,7 @@ export default function Faq() {
         <div>
             <div className="space-y-5"> 
                 <div className="flex items-center justify-center">
-                    <h5 className="font-bold border-b-4  border-[#270A63E5]">Frequently asked Questions</h5>
+                    <h5 className="text-2xl font-bold border-b-4  border-[#270A63E5]">Frequently asked Questions</h5>
                 </div>
                 <p className="text-center mb-15">
                     Have questions? We've got answers

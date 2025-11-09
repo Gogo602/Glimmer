@@ -4,6 +4,11 @@ import { FaLock } from "react-icons/fa";
 
 
 export default function NewPasswordPage() {
+    const [user, setUser] = React.useState({
+              password: "",
+              confirm_password: "",
+    })
+
   return (
     <section className="min-h-screen w-full bg-black relative flex items-center justify-center px-3">
         {/* Dark Noise Colored Background */}
@@ -29,24 +34,28 @@ export default function NewPasswordPage() {
                     <p>Your new password must be secure...</p>
                   </div>
                 <form action="" className="flex flex-col w-full space-y-5">
+                    <div className='relative'>
+                        <PasswordInput 
+                          label="Password" 
+                          name="password" 
+                          value={user.password} 
+                          onChange={(e) => setUser({...user, password: e.target.value})} 
+                          required={true}
+                        />
+                        <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
+                    </div>
                     
                     <div className='relative'>
-                        <label htmlFor="password" className="pb-2">Password</label>
-                        <input 
-                          type="password" 
-                          className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        <PasswordInput 
+                          label="Confirm Password" 
+                          name="confirm_password" 
+                          value={user.confirm_password} 
+                          onChange={(e) => setUser({...user, confirm_password: e.target.value})} 
+                          required={true}
                         />
                         <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
                     </div>
-                    <div className='relative'>
-                        <label htmlFor="password" className="pb-2">Password</label>
-                        <input 
-                          type="password" 
-                          className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
-                        />
-                        <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
-                    </div>
-                     <div className='font-semibold flex items-center justify-end'>
+                    <div className='font-semibold flex items-center justify-end'>
                         <p>Remember your password? </p> 
                         <Link href="/login" className="text-right font-semibold ml-2">Login</Link>
                     </div>

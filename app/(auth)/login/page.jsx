@@ -1,10 +1,20 @@
+"use client"
+
+import React from 'react'
 import Link from 'next/link'
 import { FaPlus } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa6'
 import { FaLock } from "react-icons/fa";
+import EmailInput from '@/components/inputs/EmailInput';
+import PasswordInput from '@/components/inputs/PasswordInput';
 
 
 export default function LoginPage() {
+  const [user, setUser] = React.useState({
+        email: "",
+        password: "",
+  })
+  
   return (
     <section className="min-h-screen w-full bg-black relative flex items-center justify-center px-3">
         {/* Dark Noise Colored Background */}
@@ -21,7 +31,7 @@ export default function LoginPage() {
         backgroundPosition: "0 0, 10px 10px, 15px 5px",
         }}
       />
-        <div className="text-white border-4 rounded-tl-4xl border-[#270A63E5] p-5 w-full -mt-10 md:w-2/5 md:mt-5 relative">
+        <div className="text-white border-4 rounded-tl-4xl border-[#270A63E5] p-5 w-full -mt-10 md:w-2/5 md:mt-20 relative">
             <div className="space-y-5">
                   <div className="space-y-2 text-center">
                     <div className="flex items-center justify-center">
@@ -29,20 +39,24 @@ export default function LoginPage() {
                     </div>
                     <p>GliimerId is built for you</p>
                   </div>
-                <form action="" className="flex flex-col w-full space-y-5">
+                <form action="" className="flex flex-col w-full space-y-2">
                     <div className="relative">
-                        <label htmlFor="email" className="">Email</label>
-                        <input
-                              type="email"
-                              className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        <EmailInput 
+                          label="Email"
+                          name="email"
+                          value={user.email}
+                          onChange={(e) => setEmail({...user, email: e.target.value})}
+                          required={true}
                         />
                         <FaEnvelope size={26} className='text-yellow-600 absolute top-10 left-2'/>
                     </div>
                     <div className='relative'>
-                        <label htmlFor="password" className="pb-2">Password</label>
-                        <input 
-                          type="password" 
-                          className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        <PasswordInput 
+                          label="Password" 
+                          name="password" 
+                          value={user.password} 
+                          onChange={(e) => setUser({...user, password: e.target.value})} 
+                          required={true}
                         />
                         <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
                     </div>

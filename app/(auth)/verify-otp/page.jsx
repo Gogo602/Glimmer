@@ -1,9 +1,15 @@
+import PasswordInput from '@/components/inputs/PasswordInput';
 import Link from 'next/link'
+import React from 'react';
 import { FaPlus } from 'react-icons/fa'
 import { FaLock } from "react-icons/fa";
 
 
 export default function OtpResetPage() {
+  const [user, setUser] = React.useState({
+          otp: "",
+    })
+
   return (
     <section className="min-h-screen w-full bg-black relative flex items-center justify-center px-3">
         {/* Dark Noise Colored Background */}
@@ -31,10 +37,12 @@ export default function OtpResetPage() {
                 <form action="" className="flex flex-col w-full space-y-5">
                     
                     <div className='relative'>
-                        <label htmlFor="password" className="pb-2">OTP</label>
-                        <input 
-                          type="password" 
-                          className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        <PasswordInput 
+                          label="OTP" 
+                          name="otp" 
+                          value={user.otp} 
+                          onChange={(e) => setUser({...user, otp: e.target.value})} 
+                          required={true}
                         />
                         <FaLock size={26} className='text-yellow-600 absolute top-10 left-2'/>
                     </div>

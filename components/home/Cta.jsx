@@ -7,7 +7,7 @@ export default function Cta() {
         <div className="space-y-10">
             <div className="space-y-8"> 
                 <div className="flex items-center justify-center">
-                    <h5 className="font-bold border-b-4  border-[#270A63E5]">Ready to Shine?</h5>
+                    <h5 className="text-2xl font-bold border-b-4  border-[#270A63E5]">Ready to Shine?</h5>
                 </div>
                 <p className="text-center mb-5 ">
                     Join GlimmerID and transform your online presence. Create a profile that <br className='hidden md:inline'/> truely represents you and attracts the right opportunities

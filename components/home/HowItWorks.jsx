@@ -10,7 +10,7 @@ export default function HowItWorks() {
         <div className="space-y-10">
             <div className="space-y-5"> 
                 <div className="flex items-center justify-center">
-                    <h5 className="font-bold border-b-4  border-[#270A63E5]">How It Works</h5>
+                    <h5 className="text-2xl font-bold border-b-4  border-[#270A63E5]">How It Works</h5>
                 </div>
                 <p className="text-center mb-15">
                     Three simple steps to a powerful professional brand
@@ -20,7 +20,7 @@ export default function HowItWorks() {
                     {howItWorks.map((how) => (
                         <div key={how.id} className=" p-5 shadow-2xl border-t-4 border-[#270A63E5] relative">
                             <FaPlus className="absolute h-6 w-6 -top-3.5 -left-3.5 text-yellow-600 md:hidden" />
-                            <p className="flex items-center justify-center">{how.icon}</p>
+                            <p className="flex items-center justify-center text-yellow-600">{how.icon}</p>
                             <p className="font-bold py-5 text-lg text-center">{how.title}</p>
                             <p className="text-center">{how.how}</p>
                         </div> 
