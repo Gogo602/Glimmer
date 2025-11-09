@@ -1,3 +1,6 @@
+"use client"
+
+import React from 'react'
 import Link from 'next/link'
 import { FaPlus } from 'react-icons/fa'
 import { FaLock } from "react-icons/fa";

@@ -1,6 +1,8 @@
+"use client"
+
+import React from 'react'
 import PasswordInput from '@/components/inputs/PasswordInput';
 import Link from 'next/link'
-import React from 'react';
 import { FaPlus } from 'react-icons/fa'
 import { FaLock } from "react-icons/fa";
 

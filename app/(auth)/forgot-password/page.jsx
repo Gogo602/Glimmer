@@ -1,9 +1,17 @@
+"use client"
+
+import React from "react"
+import EmailInput from '@/components/inputs/EmailInput'
 import Link from 'next/link'
 import { FaPlus } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa6'
 
 
 export default function ForgotPage() {
+  const [user, setUser] = React.useState({
+        email: "",
+  })
+
   return (
     <section className="min-h-screen w-full bg-black relative flex items-center justify-center px-3">
         {/* Dark Noise Colored Background */}
@@ -30,10 +38,12 @@ export default function ForgotPage() {
                   </div>
                 <form action="" className="flex flex-col w-full space-y-5">
                     <div className="relative">
-                        <label htmlFor="email" className="">Email</label>
-                        <input
-                              type="email"
-                              className="border border-white hover:border-[#270A63E5] px-4 py-2 rounded-md block outline-none w-full mt-2 pl-10"
+                        <EmailInput 
+                          label="Email"
+                          name="email"
+                          value={user.email}
+                          onChange={(e) => setEmail({...user, email: e.target.value})}
+                          required={true}
                         />
                         <FaEnvelope size={26} className='text-yellow-600 absolute top-10 left-2'/>
                     </div>
