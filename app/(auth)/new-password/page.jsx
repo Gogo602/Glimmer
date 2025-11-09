@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaPlus } from 'react-icons/fa'
 import { FaLock } from "react-icons/fa";
+import PasswordInput from '@/components/inputs/PasswordInput';
 
 
 export default function NewPasswordPage() {
