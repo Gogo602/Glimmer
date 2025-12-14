@@ -25,7 +25,7 @@ export default function Feature() {
                                     <FaPlus className="absolute h-6 w-6 -bottom-3.5 -left-3.5 text-yellow-600" />
                                     <FaPlus className="absolute h-6 w-6 -top-3.5 -right-3.5 text-yellow-600" />
                                     <FaPlus className="absolute h-6 w-6 -bottom-3.5 -right-3.5 text-yellow-600" />
-                            <p className="">{feature.icon}</p>
+                            <p className="text-yellow-600">{feature.icon}</p>
                             <p className="font-bold py-5 text-lg">{feature.title}</p>
                             <p>{feature.description}</p>
                         </div> 
