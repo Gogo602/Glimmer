@@ -26,7 +26,6 @@ export default async function RootLayout({ children }) {
               {children}
               </main>
               <Footer />
-              {/* <ToastContainer/>  */}
           </body>
         </html>
      

@@ -21,10 +21,10 @@ export default function Home() {
         }}
       />
 
-      <main className="relative text-white">
+      <div className="relative text-white">
         <Hero />
         <Body />
-      </main>  
+      </div>  
     </div>
     
   );

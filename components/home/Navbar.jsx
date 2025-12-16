@@ -14,8 +14,6 @@ const navItems = [
     {name: "Pricing", href: '/pricing'}
 ]
 
-
-
 export default function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
