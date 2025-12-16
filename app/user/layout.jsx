@@ -4,7 +4,6 @@ import "../../css/globals.css";
 export default async function RootLayout({ children }) {
 
   return (
-   
         <html lang="en">
           <body>
               <main>
@@ -12,6 +11,5 @@ export default async function RootLayout({ children }) {
               </main>
           </body>
         </html>
-     
   );
 }
