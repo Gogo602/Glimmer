@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Features() {
   return (
-    <div className="min-h-screen w-full bg-black relative">
+    <div className="min-h-screen w-full bg-white relative">
       {/* Dark Noise Colored Background */}
       <div
         className="absolute inset-0 z-0"
